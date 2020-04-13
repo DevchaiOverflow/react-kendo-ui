@@ -2,13 +2,15 @@ import React from 'react'
 import Appbar from './Controls/Appbar'
 import MenuStep from './Controls/MenuStep'
 import SortTable from './Controls/SortTable'
+import ProjectRequest from './Components/ProjectRequest'
 
 const App = props => {
   return (
     <div>
       <Appbar />
       <MenuStep />
-      <SortTable />
+      {/* <SortTable /> */}
+      <ProjectRequest />
     </div>
   )
 }

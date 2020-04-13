@@ -61,7 +61,7 @@ const MenuStep = props => {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Grid container direction="row" alignItems="flex-end">
 
           <Grid item xs={2}>
