@@ -6,7 +6,8 @@ import EditIcon from '@material-ui/icons/Edit';
 import CheckIcon from '@material-ui/icons/Check';
 import CloseIcon from '@material-ui/icons/Close';
 
-import '@progress/kendo-theme-default/dist/all.css';
+// import '@progress/kendo-theme-default/dist/all.css';
+import '@progress/kendo-theme-material/dist/all.css';
 import { Grid, GridColumn } from '@progress/kendo-react-grid';
 import { orderBy } from '@progress/kendo-data-query';
 import { sampleProducts } from './products';
@@ -125,7 +126,10 @@ const SortTable = props => {
         <GridColumn field="#" cell={CellAct} width="100px" editable={false} />
         <GridColumn field="ProductID" title="Product Id" editable={false} />
         <GridColumn field="ProductName" title="Product Name" />
-        <GridColumn field="UnitPrice" title="Unit Price" editor="numeric" />
+        <GridColumn title="Unit Price">
+          <GridColumn field="Col1" title="Col1" editor="numeric"/>
+          <GridColumn field="Col2" title="Col2"/>
+        </GridColumn>
       </Grid>
     </div>
   )

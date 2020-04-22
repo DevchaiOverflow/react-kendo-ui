@@ -1,7 +1,6 @@
 import React from 'react'
 import Appbar from './Controls/Appbar'
 import MenuStep from './Controls/MenuStep'
-import SortTable from './Controls/SortTable'
 import ProjectRequest from './Components/ProjectRequest'
 
 const App = props => {
@@ -9,7 +8,6 @@ const App = props => {
     <div>
       <Appbar />
       <MenuStep />
-      {/* <SortTable /> */}
       <ProjectRequest />
     </div>
   )

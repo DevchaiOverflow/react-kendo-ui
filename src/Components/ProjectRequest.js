@@ -1,13 +1,12 @@
 import React from 'react'
 // Material ui
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 // Controls
 import SortTable from '../Controls/SortTable'
-import TabMenu from '../Controls/TabMenu'
 
 const styles = {
   root: {
@@ -24,7 +23,7 @@ const ProjectRequest = props => {
       <CssBaseline />
       <Container maxWidth="lg">
         <Paper>
-          {/* <TabMenu /> */}
+          <Typography variant="h6" gutterBottom>Project Request</Typography>
           <SortTable />
         </Paper>
       </Container>
